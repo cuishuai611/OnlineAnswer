@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <link rel="stylesheet" href="css/riskassess.css">
+    <title>风险评估测试</title>
+</head>
+<body>
+<section class='loading-layer'>
+    <div class='loading-container'>
+        <img src="img/loading.gif" alt="正在加载">
+        <p>请稍等...</p>    
+    </div>
+</section>
+<section class='risk-slider-con'>
+    <div class='risk-question'>
+        <p><span id='curNum'>1</span><span class='totalnum'>/10</span></p>
+        <p class='cur-title'>目前您属于的年龄段：</p>
+    </div>
+    <div class='risk-wapper'>
+        <form name='riskassess'>
+        <ul class='risk-container clearfix'>
+            <li class='cur-page' risk-title='目前您属于的年龄段：' risk-index='1'>
+                <div><i value='1'></i><span>A 大于60岁</span></div>
+                <div><i value='2'></i><span>B 51-60岁</span></div>
+                <div><i value='3'></i><span>C 18-30岁</span></div>
+                <div><i value='4'></i><span>D 31-50岁</span></div>
+            </li>
+            <li risk-title='您的家庭资产状况：' risk-index='2'>
+                <div><i value='1'></i><span>A 5万元以下</span></div>
+                <div><i value='2'></i><span>B 5-20万元</span></div>
+                <div><i value='3'></i><span>C 20-50万元以上</span></div>
+                <div><i value='4'></i><span>D 50-100万元以上</span></div>
+                <div><i value='5'></i><span>E 100万元以上</span></div>
+            </li>
+            <li risk-title='您的投资经验？' risk-index='3'>
+                <div><i value='1'></i><span>A 无</span></div>
+                <div><i value='2'></i><span>B 1年以内</span></div>
+                <div><i value='3'></i><span>C 2-5年</span></div>
+                <div><i value='4'></i><span>D 6-10年</span></div>
+                <div><i value='5'></i><span>E 10年以上</span></div>
+            </li>
+            <li risk-title='一般情况下,您愿意选择()投资期限的产品' risk-index='4'>
+                <div><i value='1'></i><span>A 3个月以下</span></div>
+                <div><i value='2'></i><span>B 1年以下</span></div>
+                <div><i value='3'></i><span>C 1-2年</span></div>
+                <div><i value='4'></i><span>D 2-3年</span></div>
+                <div><i value='5'></i><span>E 3年以上</span></div>
+            </li>
+            <li risk-title=' 您以往的投资以什么产品为主？' risk-index='5'>
+                <div><i value='1'></i><span>A 存款，国债</span></div>
+                <div class='risk-info-more'><i value='2'></i><span>B 存款，债券，偏债型基金，偏债型券商集合理财计划等</span></div>
+                <div class='risk-info-more'><i value='3'></i><span>C 存款，债券，股票，期货，偏股型基金，偏股型券商集合计划，信托计划等</span></div>
+                <div><i value='4'></i><span>D 金融衍生品、私募股权投资</span></div>
+            </li>
+            <li risk-title='下列投资组合的表现，您倾向接受：' risk-index='6'>
+                <div><i value='1'></i><span>A 保本，固定收益</span></div>
+                <div><i value='2'></i><span>B 收益较低，波动较小</span></div>
+                <div><i value='3'></i><span>C 收益中等，波动温和</span></div>
+                <div><i value='4'></i><span>D 收益高，波动幅度大</span></div>
+            </li>
+            <li risk-title='以下情况，您会选择哪一种：' risk-index='7'>
+                <div><i value='1'></i><span>A 有100%机会赢取1千元</span></div>
+                <div><i value='2'></i><span>B 有50%机会赢取5万元</span></div>
+                <div><i value='3'></i><span>C 有25%的机会赢取50万元</span></div>
+                <div><i value='4'></i><span>D 有10%的机会赢取100万元</span></div>
+            </li>
+            <li risk-title='您能承担的投资损失上限为：' risk-index='8'>
+                <div><i value='1'></i><span>A 不能承受损失</span></div>
+                <div><i value='2'></i><span>B 10%以内</span></div>
+                <div><i value='3'></i><span>C 10%-30%</span></div>
+                <div><i value='4'></i><span>D 30%-50%</span></div>
+                <div><i value='5'></i><span>E 50%以上</span></div>
+            </li>
+            <li risk-title='您对亏损持续时间忍受的状况：' risk-index='9'>
+                <div><i value='1'></i><span>A 任意一年内避免总资产有损失</span></div>
+                <div><i value='2'></i><span>B 一到三年内避免总资产有损失</span></div>
+                <div><i value='3'></i><span>C 三到五年内避免总资产有损失</span></div>
+                <div><i value='4'></i><span>D 在五年以上的时期内保证不受通货膨胀的影响</span></div>
+            </li>
+            <li risk-title='您投资发生损失后的心理：' risk-index='10'>
+                <div><i value='1'></i><span>A 寝食难安</span></div>
+                <div><i value='2'></i><span>B 对情绪影响大</span></div>
+                <div><i value='3'></i><span>C 对情绪有些影响</span></div>
+                <div><i value='4'></i><span>D 学习经验，照常生活</span></div>
+            </li>
+        </ul>
+        </form>
+    </div>
+</section>
+<section class='handle-btns'>
+    <a href='javascipt:void(0)' role="button" class='prev-btn'><<上一题</a>
+    <a href='javascipt:void(0)' role="button" class='next-btn'>下一题>></a>
+</section>
+
+<section class='layer-out layer-hide'>
+    <div class='layer-container'>
+        <h3>温馨提示</h3>
+        <p>您尚未完成本次测评，是否确认退出？</p>
+        <div class='layer-handle'>
+            <a href="javascript:void(0);" role="button" class='cancel-btn'>取消</a>
+            <a href="#返回账户主页">确定</a>
+        </div>
+    </div>
+</section>
+
+<section class='risk-submit'><a href="javascript:void(0);" role="button" class='btn'>提交</a></section>
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type='text/javascript' src="js/public.js"></script>
+<script type='text/javascript' src="js/riskresult.js"></script>
+<script type='text/javascript' src="js/common.js"></script>
+</html>

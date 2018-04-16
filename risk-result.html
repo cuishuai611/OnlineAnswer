@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <link rel="stylesheet" href="css/riskassess.css">
+    <title>风险评估结果</title>
+</head>
+<body>
+<section class='risk-result-con'>
+    <section class='res-top'>
+        <!-- <img src="img/type1.png" alt="保守型">
+        <h1>保守型</h1> -->
+        <img src="img/type2.png" alt="稳健型">
+        <h1>稳健型</h1>
+        <!-- <img src="img/type3.png" alt="积极型">
+        <h1>稳健型</h1> -->
+        <!-- <img src="img/type4.png" alt="激进型">
+        <h1>激进型</h1> -->
+
+        <p>测评结果<span class='endtime'>2018-6-13</span><i class='pastdate'></i>过期</p>
+    </section>
+    <section class='res-bottom'>
+        <!-- <p>您属于可以承担低风险的投资者<br>适合投资以保本为主的投资产品</p> -->
+        <p>您对风险有一定认识<br>愿意承受轻度投资风险，可以接受收益小幅波动<br>适合投资收益长期、稳步增长的产品</p>
+        <!-- <p>您专注于投资的长期增值<br>尝尝会为提高投资收益而采取一些行动<br>并愿意为此承担较大的风险</p>
+        <p>您的风险承受能力较高<br>投资时您大胆进取，勇于尝试资产配置<br>适合投入风险较高的品种</p> -->
+        <div class='lender-handle'>
+            <a href="#返回账户" class='btn'>返回我的账户</a>
+            <a href="#重新评估" class='btn'>重新评估</a>
+        </div>
+        <p class='risk-result-skip-c'><span class='risk-skip'>默认保守型 &gt;</span></p>
+    </section>
+</section>
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type='text/javascript' src="js/public.js"></script>
+<script type='text/javascript' src="js/riskresult.js"></script>
+<script>
+$(document).ready(function(){
+    $('.risk-skip').bind('click', function(){
+        var URL = '', skip = true;
+        resultFun(URL, skip);
+    })
+})
+window.onload = function(){
+    pushHistory();
+	window.addEventListener("popstate", function(e) {
+        window.location.href = 'http://www.0317news.cn/'
+    }, false);
+}
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <link rel="stylesheet" href="css/riskassess.css">
+    <title>风险评估测试</title>
+</head>
+<body>
+<section class='risk-explain'>
+    <p class='risk-type-def'><a href="#保守型结果页" class='risk-skip-btn'>默认保守型></a></p>
+    <div class='article'>
+        <p>尊敬的用户您好：</p>
+        <p>因金融产品有不同的风险等级，根据相关法律规定，您需要完成风险评估以客观了解自身的风险承受能力，以便您明确投资目标，做出理性的投资决策，防止违背意愿购买了与自身风险承受能力不匹配的产品。</p>
+        <p>我们将对您进行风险承受能力评估，根据评估结果，您的风险承受能力将属于一下四种类型中的一种：保守型、稳健型、积极型、进取型。</p>
+        <p>为了给您提供更好的资产选择，请您认真作答，感谢您的配合。</p>
+    </div>
+</section>
+<a href="#跳转答题页" class='risk-start-btn btn'>开始评估</a>
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type='text/javascript' src="js/public.js"></script>
+<script type='text/javascript' src="js/riskresult.js"></script>
+<script>
+$(document).ready(function(){
+    $('.risk-skip').bind('click', function(){
+        var URL = '', skip = true;
+        resultFun(URL, skip);
+    })
+})
+</script>
+</html>
